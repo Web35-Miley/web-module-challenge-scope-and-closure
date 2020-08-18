@@ -111,8 +111,8 @@ function scoreboard(finalScore, inning ,inningsNumber) {
   let home = 0;
   let away = 0;
   for(let i = 1; i <= inningsNumber; i++ ) {
-    home += finalScore(inning, i).Home;
-    away += finalScore(inning, i).Away;
+    home = finalScore(inning, i).Home;
+    away = finalScore(inning, i).Away;
     if(i == 1) {
       console.log(`${i}st inning: ${away} - ${home}`)
     } else if(i == 2) {
